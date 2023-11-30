@@ -1,0 +1,1 @@
+Signing digitally, signing something is a way of verifying that it's not been tampered with. It is not a way of hiding or encrypting the information.

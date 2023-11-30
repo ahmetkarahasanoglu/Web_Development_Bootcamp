@@ -1,0 +1,15 @@
+> npm init  // creates package.json  ('npm init -y' skips the questions that terminal asks as right after entering this line of command)
+> npm install 'packageName'  // installs a package and notes down the name of the package to the package.json file, under 'dependencies' there.
+
+When we upload (share) our code to somewhere (ex: github), or when we downlaod codes from there, we don't upload or download the 'node_modules' (folder). 
+   '--> When we downlaod a code (and folders of it), we have to install node packages. What we could do is installing (by entering command on terminal) each package written under 'dependencies' in the package.json. But we won't do that, there is a shorter way: on terminal, when we're in the directory that package.json is, we will write:
+
+> npm install  // it will install all the 'dependencies' in the package.json file to the node_modules.
+
+
+**** HOW TO EXECUTE A FILE ON TERMINAL: ****
+> node index.js (optional_input_here)  // when in the directory of index.js on terminal. (the optional input is to be passed from terminal to index.js)
+
+**** HOW TO PROCESS AN INPUT IN INDEX.JS (AN INPUT THAT IS PASSED ON TERMINAL ) ****
+const input = process.argv[2]  // take the third element(word) passed on the terminal [the 2nd index - means 3rd element]
+console.log(input)  // or ex: we can write  'input * input' . It gives the square of an input(number) that is passed in.

@@ -1,0 +1,15 @@
+body {
+    color: purple;
+}
+
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+
+button, input {   /* Certain elements don't inherit things by default. Here, button and input don't inherit things by default. So we manually make them inherit. */
+    color: inherit;
+}

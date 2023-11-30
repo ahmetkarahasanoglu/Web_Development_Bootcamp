@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Deneme</title>
+</head>
+
+<body>
+    <h1>Edit</h1>
+    <!-- Note: With HTML Forms, we can only send GET or POST request. We can't send PATCH or DELETE request etc. So we're gonna apply method-override: -->
+    <form method="POST" action="/comments/<%=comment.id%>?_method=PATCH"> <!-- we applied method-override here [it's an expressJs method] (see 'index2_Deneme.js') -->
+        <textarea name="comment" id="" cols="30" rows="10"><%= comment.comment %></textarea>
+        <button>Save</button>
+    </form>
+</body>
+
+</html>

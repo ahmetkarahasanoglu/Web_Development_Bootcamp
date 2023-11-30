@@ -1,0 +1,67 @@
+/*  EMS:
+1 em means exact the same size with the parent element. 2 em means twice the size of the parent element.
+      NOTE: With font-size, 1 em equals to the font-size of the parent. 2 em's is twice the font-size of the parent etc.
+      With other properties, 1 em is equal to the computed font-size of the element itself.
+
+--- REMS (root ems): ----
+Relative to the root html element's font-size. Often easier to work with.
+       If the root font-size is 20px, 1 rem is always 20px, 2 rem is always 40px etc. */
+
+html {
+    font-size: 30px;
+}
+#percentages {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color:#e5989b;
+    width: 70%;
+    height: 20%;
+}
+
+
+#ems h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+#ems h3 {
+    font-size: 1.5em;
+}
+#ems p {
+    font-size: 1em;
+}
+
+#ems {
+    font-size: 15px;
+}
+
+#ems ul {
+    font-size: 1.5em;  /* 1.5 times of the parent element */
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+
+#rems h2{
+    font-size: 3rem;  /* 3 times of the root element (html element - which has 30px font size [on top of page here]) */
+}
+#rems h3{
+    font-size: 2rem;
+}
+#rems ul{
+    font-size: 1.5rem;
+}
+
+#rems button{
+    font-size: 1.5rem;
+}
+

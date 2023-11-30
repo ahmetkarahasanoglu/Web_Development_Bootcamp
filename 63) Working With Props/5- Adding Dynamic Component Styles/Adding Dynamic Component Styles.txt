@@ -1,0 +1,1 @@
+This lesson has been shown in the "3- React Conditionals" folder which is on one directory above here. --> The related files there: DoubleDice.jsx, Heading.jsx, App.jsx

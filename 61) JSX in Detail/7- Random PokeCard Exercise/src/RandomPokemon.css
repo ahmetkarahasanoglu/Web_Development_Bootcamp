@@ -1,0 +1,14 @@
+.pokeCard {
+  border: 3px solid red;
+  width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pokeCard img {
+  width: 150px;
+}
+
+.pokeCard h1 {
+  color: blue;
+}

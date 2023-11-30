@@ -1,0 +1,10 @@
+Passport website:
+https://www.passportjs.org/
+
+
+Passport-local (github):
+https://github.com/jaredhanson/passport-local
+
+
+Passport-local-mongoose (github):
+https://github.com/saintedlama/passport-local-mongoose

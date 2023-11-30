@@ -1,0 +1,46 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ------------------ (we use the below block just for this classList lesson */
+.purple {
+    color: #7b07ff;
+}
+
+.border {
+    border: 3px solid greenyellow;
+}
+
+.line_through {
+    text-decoration: line-through;
+}
+
+.italic {
+    font-style: italic;
+}
+/* ----------------------- */
+
+#banner {
+    width: 100%;
+}
+img.square {
+    width: 400px;
+    object-fit: cover;
+    height:400px;
+}
+
+#toc {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    display: table;
+    padding: 1em;
+}
+
+#toc a {
+    text-decoration: none;
+}
+
+.tocnumber {
+    color: black;
+}

@@ -1,0 +1,13 @@
+(*) Also available in index.js
+
+
+// 'CRUD' concept: Create, Read, Update, Delete.
+
+// GET   -  /comments     - list all comments    -  [Index]
+// POST  -  /comments     - Create a new comment -  [Post]
+// GET   -  /comments/:id - Get one comment      -  [Show]
+// PATCH -  /comments/:id - Update one comment   -  [Update]
+// DELETE-  /comments/:id - Destroy one comment  -  [Destroy]
+
+// GET   -  /comments/new - Form to create a new comment   -   [New]
+// GET   -  /comments/:id/edit - Form to edit specific comment [Edit]

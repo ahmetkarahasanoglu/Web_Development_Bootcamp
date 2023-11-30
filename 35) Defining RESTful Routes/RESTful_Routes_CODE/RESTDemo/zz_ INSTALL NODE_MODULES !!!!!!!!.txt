@@ -1,0 +1,2 @@
+On Terminal:
+> npm install

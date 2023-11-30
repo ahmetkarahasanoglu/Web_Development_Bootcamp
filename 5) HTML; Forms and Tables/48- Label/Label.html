@@ -1,0 +1,34 @@
+<!-- Labels are necessary especially to connect the explanation text that is on 
+    the left of the text box (or whatever type of input we're using), and the 
+    text box. So that they become affiliated (connected). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+</head>
+<body>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username:</label> <!-- Burada for'un karşısında yazdığımız string ile aşağı satırdaki id'nin karşısındaki string aynı olduğu için bu iki öğe eşleşir; 'Enter a username' metnine tıkladığmız zaman, yanındaki metin kutusunda da imleç yanıp sönmeye başlar. -->
+            <input id="username" placeholder="Username_placeholder">  <!-- I think the input "type" is determined by default as "text" type. -->
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password" placeholder="Password_placeholder">
+        </p>
+        <p>
+        <label for="color">Select a color:</label>
+        <input id="color" type="color">
+        </p>
+        <p>
+        <label for="number">Enter a number:</label>
+        <input id="number" type="number" placeholder="Only numbers are allowed.">
+
+        </p>
+    </form>
+</body>
+</html>

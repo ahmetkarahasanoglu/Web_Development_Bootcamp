@@ -1,0 +1,17 @@
+.Box {
+    width: 4rem;
+    height: 4rem;  
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.Box:hover {
+    cursor:pointer;
+}
+
+/* .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+} */

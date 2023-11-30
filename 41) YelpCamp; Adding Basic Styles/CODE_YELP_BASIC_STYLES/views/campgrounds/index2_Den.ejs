@@ -1,0 +1,28 @@
+<% layout('layouts/boilerplate2_Den.ejs') %>
+
+<h1>All Campgrounds</h1>
+<div>
+    <a href="/campgrounds/new">Add Campground</a>
+</div>
+<% for (let campground of campgrounds){%>
+    <div class="card mb-3">  <!-- mb-3: margin bottom 3 (so that cards are spaced out) -->
+        <div class="row">
+            <div class="col-md-4"> <!-- col-md-4: when above medium, take 4/12 width -->
+                <img class="img-fluid" alt="" src="<%=campground.image%>">
+            </div>            
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title"><%= campground.title %></h5>
+                    <p class="card-text"><%= campground.description %></p>
+                    <p class="card-text">
+                        <small class="text-muted"><%=campground.location%></small>
+                    </p>
+                    <a class="btn btn-primary" href="/campgrounds/<%=campground._id %>">View <%=campground.title %></a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+<% }%>

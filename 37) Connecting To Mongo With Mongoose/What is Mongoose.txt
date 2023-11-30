@@ -1,0 +1,7 @@
+Mongoose connects Mongo and NodeJS.
+
+Mongoose enables us to control javascript code related to MongoDB, on terminal.
+
+ODM (Object Data Mapper):
+    ODMs like Mongoose map ('map' as a verb) documents coming from a database into usable JavaScript objects.
+    Mongoose provides ways for us to model out our application data and define a schema. It offers easy ways to validate data and build complex queries from the comfort of JS. 

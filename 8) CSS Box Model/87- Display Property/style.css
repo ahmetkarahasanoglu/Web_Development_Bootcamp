@@ -1,0 +1,11 @@
+h1 {
+    background-color:burlywood;
+    border: 2px solid black;
+    /*display: inline;*/     /* With this command, we can convert a "block" by-default H1 to an inline element. */
+}
+
+span {
+    background-color: aquamarine;
+    border: 2px solid black;
+    /*display: block;*/       /* With this command, we can convert an "inline" by-default span to a "block" element. */
+}

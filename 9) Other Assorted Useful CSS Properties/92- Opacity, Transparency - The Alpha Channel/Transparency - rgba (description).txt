@@ -1,0 +1,7 @@
+rgba means: red, green, blue, ALPHA.
+
+Example:
+rgba(0, 209, 112, 0.5)
+The fourth parameter here is alpha which represents transparency. It takes a value between 0 and 1. 
+"0" is completely transparent.
+"1" is not at all transparent.

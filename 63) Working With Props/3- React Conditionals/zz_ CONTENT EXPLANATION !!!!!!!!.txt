@@ -1,0 +1,2 @@
+
+* Rendering Arrays With Map: in "ColorList.jsx" and "App.jsx"

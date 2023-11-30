@@ -1,0 +1,21 @@
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;  
+    margin: center;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+}
+
+#relative #middle {
+    position: relative;
+    top: 100px;
+}

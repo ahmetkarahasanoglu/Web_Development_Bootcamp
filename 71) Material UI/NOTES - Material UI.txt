@@ -1,0 +1,6 @@
+Material UI is a set of prebuilt components that we can use to construct our own applications. It's full React components that we can incorporate to get some nice styles, but also some common functionality.
+  Material UI is for React.
+  We will use "MUI Core" (the basic) product, of Material UI.
+----
+INSTALLATION:
+https://mui.com/material-ui/getting-started/installation/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration Form</title>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/target_address">
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstName" id="firstname" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastName" id="lastname" required>  
+        </div>
+        <div>
+            <p>Select a Race:</p>
+            <label for="funrun5k">Fun Run 5k</label>
+            <input type="radio" name="race_type" id="funrun5k" value="funRun5k"> <br>
+            <label for="halfmarathon">Half Marathon</label>
+            <input type="radio" name="race_type" id="halfmarathon" value="halfMarathon"> <br>
+            <label for="fullmarathon">Full Marathon</label>
+            <input type="radio" name="race_type" id="fullmarathon" value="fullMarathon">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="eMail" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="psw" id="password" required>
+        </div>
+        <div>
+            <label for="age">Select Age Group:</label>
+            <select name="ageee" id="age">
+                <option value="">--Pls select--</option>
+                <option value="undr18">Under 18</option>
+                <option value="btw 18-35">18-35</option>
+                <option value="btw 35-50">35-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+        <div>
+            <button>Register!</button>
+        </div>
+    </form>
+</body>
+</html>

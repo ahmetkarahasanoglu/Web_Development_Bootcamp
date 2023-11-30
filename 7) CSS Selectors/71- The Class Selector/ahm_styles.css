@@ -1,0 +1,8 @@
+#signup {   /* id belirterek seçmek */
+    background-color: rgb(166, 205, 207);
+    color: crimson;
+}
+
+.tag {  /* We selected the items with "tag" CLASS. (we had given this class name to some items in the html file)  */
+    background-color: red;
+}

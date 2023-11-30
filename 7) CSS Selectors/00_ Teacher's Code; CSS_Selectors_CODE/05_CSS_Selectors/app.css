@@ -1,0 +1,130 @@
+/* Specificity Explanation is at the bottom of the page.
+------------------------------- */
+
+
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2 {             /* h1's and h2's */
+    color: #1d3557;
+}
+
+#signup{            /* elements with the id "signup */
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+.tag {              /* elements with the class "tag" */
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+.post a {           /* anchors that are nested somewhere inside an element with "post" class */
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a {  /* anchors that are nested somewhere inside footer */
+    color: #e63946;
+}
+
+h2 + button { /* button(s) that is right after an h2 */
+    font-size: 20px;
+}
+
+footer > a {        /* anchor(s) that is direct child of footer */
+    color: #457b9d;
+}
+
+input[type="password"] {  /* inputs with the type "password".   [type="password"] is an 'attribute' selector. */
+    color: greenyellow;
+}
+
+a[href*="google"]{  /* anchors with the href that contains "google" */
+    color: #1d3557;
+}
+
+
+.post a:hover {  /* anchors that are nested somewhere inside an element with "post" class (when hovered over the anchor) */
+    text-decoration: underline;
+}
+
+
+.post button:active {  /*  buttons nested somewhere inside an element with post class (when button is active). Active means when clicked and hold. If you release the click button, it will turn back to its previous condition. */
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(2n){  
+    background-color: #dfe8dc;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {  
+    color: purple;
+}
+
+p::selection {  /* when paragraph's text is selected */
+    background-color: #fcbf49;
+}
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+button {
+    background-color: magenta !important;
+}
+
+/* -------------------------------------
+The code below has been copy-pasted from another file (just to show the examples) */
+
+
+/* p button.btn {       // the buttons with the class "btn" that are nested somewhere inside a paragraph
+    color: purple;
+} */
+
+/* p button#submit {    // the buttons with the id "submit" that are nested somewhere inside a paragraph
+    color: cyan;
+} */
+
+/* Important Note: Doing h2 .heading  will look for any element with the class set to "heading" nested inside of an h2 element.
+But, without space, doing h2.heading  will look for an h2 element with the class "heading" present on it. */
+
+/* --------------------------------------
+
+************ SPECIFICITY EXPLANATION: ****************
+We give a three-digit specificity score to each selector line:
+Id > Class > Element
+_ _ _ (three digits)
+
+First digit:  Id Selectors (number of Id selectors in the selector line)
+Second digit: Class, Attribute, Pseudo-class selectors. 
+Third digit:  Element and Pseudo-Element Selectors
+
+* More detail in the slides (pdf) in this folder.
+
+*/

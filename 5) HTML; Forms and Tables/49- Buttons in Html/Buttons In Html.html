@@ -1,0 +1,62 @@
+<!-- Labels are necessary especially to connect the explanation text that is on 
+    the left of the text box (or whatever type of input we're using), and the 
+    text box. So they become affiliated (connected). -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons</title>
+    </head>
+    <body>
+        <form action="/tacos">
+            <p>
+                <label for="username">Enter a Username:</label> <!-- Burada for'un karşısında yazdığımız string ile aşağı satırdaki id'nin karşısındaki string aynı olduğu için bu iki öğe eşleşir; 'Enter a username' metnine tıkladığmız zaman, yanındaki metin kutusunda da imleç yanıp sönmeye başlar. -->
+                <input id="username" placeholder="Username_placeholder">  <!-- I think the input "type" is determined by default as "text" type. -->
+            </p>
+            
+            <p>
+                <label for="password">Enter a Password:</label>
+                <input id="password" type="password" placeholder="Password_placeholder">
+            </p>
+            <p>
+            <label for="color">Select a color:</label>
+            <input id="color" type="color">
+            </p>
+            <p>
+            <label for="number">Enter a number:</label>
+            <input id="number" type="number" placeholder="Only numbers are allowd.">
+    
+            </p> 
+
+
+
+
+            <p>
+                <!-- Alternative way to label an input (less common) : -->
+                <label>
+                    Enter a Number:
+                    <input type="number" placeholder="enter a number">
+                </label>
+            </p>
+            <p>
+                <!-- This button submits the form: -->            
+                <button>Submit!!!</button>
+            </p>
+            <p>
+                <!-- So does this one: -->
+                <input type="submit" value="Click Me!">
+            </p>
+            <p>
+                <!-- This button doesn't submit the form because the type is "button", not "submit". -->
+                <button type="button">Regular button (won't submit)</button>
+            </p>
+        </form>
+        <hr>
+        <!-- outside of a form, no default behavior : -->
+        <button>Not Inside the Form</button>
+        
+    </body>
+    </html>

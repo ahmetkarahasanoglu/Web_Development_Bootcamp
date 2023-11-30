@@ -1,0 +1,7 @@
+h1 {
+    color:  #dab227 ; /* This is hexadecimal (16'lık sistem) display of rgb color [DA-B2-27  R-G-B] */
+}
+
+h2 {
+    color: #c5e; /* This 3 digit display is the short form of #cc55ee */
+}                  /* Also, if you hover the mouse on the color code in the above line, vscode will show you the color spectrum to select a color*/

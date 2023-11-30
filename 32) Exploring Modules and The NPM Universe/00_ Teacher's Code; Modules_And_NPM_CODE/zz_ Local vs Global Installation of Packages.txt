@@ -1,0 +1,17 @@
+On Terminal, when we're in the directory that we're working, and when we install a package, it is installed locally; for example 'colors' package; the package will be installed in that directory under a folder named 'node_modules' folder (in the directory where we're at on terminal)
+
+Generally, it is preferred to install packages locally. But it is possible to install globally as well:
+
+> npm install -g cowsay  // installs cowsay package globally (on the global scope - in terms of the folders of files - about reaching of the files)
+
+Info: if we encounter an error about permission of 'writing access' when we execute the above command, the error is: [npm WARN chekcPermissons Missing write access to /usr/local/lib/node_modules] --> this is the directory where global installations are kept. Then, use this line of command to change the permission:
+> sudo chown -R $USER /usr/local/lib/node_modules   // chown means 'change ownership'
+
+Write 'cowsay' in Terminal, it will show information about cowsay.
+Write 'cowsay Hellooooo!' it will show the cow figure saying Hellooooo!.
+
+If we want to use cowsay in a js file, e.g. index.js, write in that file:
+const cowsay = require("cowsay");
+
+Then, on Terminal, write:
+> npm link cowsay  // to enable access to cowsay.

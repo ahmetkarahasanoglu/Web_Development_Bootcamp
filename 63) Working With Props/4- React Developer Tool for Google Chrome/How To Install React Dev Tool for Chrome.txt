@@ -1,0 +1,5 @@
+React Developer Tools enables us to see the app components on browser window. And the props in the components.
+
+HOW TO INSTALL REACT DEV TOOLS:
+1) In Chrome, 'Extensions' --> install React Developer Tool.
+2) React Dev Tool's "Components" and "Profiler" tabs should appear as a tab above the console(the inspect window). If it doesn't show up: In Chrome, press Ctrl + Shift + P. --> click "reload dev tools". After that, it will show up.

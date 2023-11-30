@@ -1,0 +1,12 @@
+The subject of this lesson is; the files of: MultiDiceRolls.js, MultiDiceRolls.css
+
+* Instead of the 'class' keyword, in React we use 'className'.
+Example: <h2 className = "title"> Hey! </h2>
+
+
+USING CSS STYLES IN REACT:
+- Make a component. Ex: MultiDiceRolls(){.... in the MultiDiceRolls.js
+- Make a matching CSS file that has the same name.
+- Import that CSS file in MultiDiceRolls.js.
+- Give your components a 'className'.
+- (by the way, in App.js, we need to import MultiDiceRolls.js.)

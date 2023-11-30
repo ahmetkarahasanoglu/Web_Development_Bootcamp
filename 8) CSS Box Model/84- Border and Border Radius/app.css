@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+div {
+    width: 200px;
+    height: 200px;
+}
+span {
+    margin-left: 30px;
+    margin-top:30px;
+}
+
+h1 {
+    background-color: pink;
+    width: 200px;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin: 0;
+}
+
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;   /* Note: We have to set a border-color, otherwise the border will not be visible. */
+    border-style: solid;     /* Note: We have to set a border-style, otherwise the border will not be visible. */
+    /* box-sizing: border-box; */
+        /*  '--> Note: This above line command, makes the border to remain inside the box, and not exceed it. But in default, the border width exceeds (added on to the box. Outside the box.) */
+    margin-left: 50px;
+    margin-bottom: 100px;    
+}
+
+#two {
+    background-color: #b5838d;
+    border-color: #ffcdb2;
+    border-width: 3px;
+    border-style: dashed;
+    border-left-width: 8px;
+    padding-right: 50px;
+    margin: 200px;
+}
+
+#three {
+    background-color: #6d6875;
+    border: 4px solid black;  /* Here, we used a shorthand border syntax ( width | style | color )  */
+    border-left-style: dotted;
+    border-radius: 50%;  /* Border-radius enables us to make the edges more rounded.  */
+}
+
+
+button {
+    padding: 10px 20px 30px 40px;  /* Padding is shown with green highlighted color  when we inspect the page. */
+}                                  /* Margin  is shown with orange highlighted color when we inspect the page. */

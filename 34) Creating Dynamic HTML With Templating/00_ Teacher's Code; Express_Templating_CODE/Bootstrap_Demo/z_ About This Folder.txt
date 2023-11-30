@@ -1,0 +1,20 @@
+This 'Bootstrap_Demo' folder is a duplicate of 'Templating_Demo' folder. We just made these changes below. [But when we do EJS&partials we will move the 'head', 'footer', and 'navbar' codes and we will store them in 'partials' folder.]
+
+* First, we deleted the content of 'public' folder. 
+
+* Then, inside 'public' folder, we added 'css' and 'js' folder. 
+
+* We downloaded 'Compiled CSS and JS' files from: https://getbootstrap.com/docs/5.3/getting-started/download/
+
+* Inside of this download, we copied 'css/bottstrap.min.css' file to our 'css' folder in 'public' folder. And also we copied 'js/bootstrap.min.js' file to our 'js' folder.
+
+* We made an update on the 'views/subreddit.ejs' file. Under <head> tag, <link href:"...."  --> we updated href; it was "/app.css", we changed it to "/css/bootstrap.min.css" . (app.css is no longer there, we deleted it).
+
+* Then, in the same 'subreddit.ejs' file, under <head> tag, we added <script src="/js/bootstrap.min.js"></script>
+
+* We run index.js on terminal. On webpage's console, an error occurred: "Bootstrap's Javascript requires jQuery; jQuery must be included before Bootstrap's Javascript".
+    Then, we downloaded jQuery's code (jQuery.js) from jQuery website. We put this file into 'public/js' folder.
+    We added script src to 'subreddit.ejs' file, under <head> tag:  <script src="/js/jquery.js"></script>
+    So, the error has been handled.
+
+* From bootstrap website, under Components -> Navbar; we copied a basic standard navbar code and pasted it to 'subreddit.ejs' -> inside 'body' section, to the top.

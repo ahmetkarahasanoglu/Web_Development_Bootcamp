@@ -1,0 +1,36 @@
+In terminal, write "node" and hit enter. Now you can write Javascript code. (to get out of this mode, write ".quit" or Ctrl+C(hit two times) or Ctrl+D )
+
+> global : shows global object. It has: global, clearInterval, clearTimeout, setInterval, setTimeout, queueMicrotask, clearImmediate, setImmediate.
+
+To execute a javascript file in Terminal:
+> node myJavascriptFile.js
+
+---------------------------------
+'PROCESS' in Node.Js: The process object is a global that provides information about, and control over the current Node.js process.
+
+> node [pay att: we switched to nodeJs mode by entering '> node'
+
+> process : shows the global 'process' object. It has many properties.
+
+> process.release : shows version and Url for download of that version.
+
+> process.cwd() : shows current working directory
+
+> process.argv : is a property that holds an array of command-line values provided when the current process was initiated (read ↓). 
+- The first element in the array is the absolute path of the Node program. 
+- Second element is the path of the running file. 
+- And finally any command-line arguments provided when the process was initiated.
+EXAMPLE: Create a js file. Then, inside of it, write 'console log("Hello from args file!")' and write 'console.log(process.argv). Then, execute it on Terminal by writing (in the file's directory): 'node app.js'. 
+EXAMPLE2: Create a js file lets say 'greeter.js'. Inside of it, write:
+const args = process.argv.slice(2);[which means "take the third element and so on, of the parameters sent from terminal"]
+for (let arg of args) {
+	console.log(`Hi there, ${arg}`);
+}
+Now, in terminal, we can pass in an argument to this greeter.js; write in terminal:
+node greeter.js colt rusty tammy
+Output In Terminal:
+Hi there, colt
+Hi there, rusty
+Hi there, tammy
+
+####################################

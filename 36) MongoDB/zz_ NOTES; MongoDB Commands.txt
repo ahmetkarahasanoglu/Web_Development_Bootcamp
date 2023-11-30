@@ -1,0 +1,76 @@
+* SQL vs. NoSQL: In SQL databases, every process is done via tables (pre-defined pattern). But in NoSQL, there are no tables; we add data directly. MongoDB is a NoSQL database.
+
+BSON: is Binary JSON. MongoDB uses it. JSON is slow. BSON is more compact version of JSON.
+In BSON, the types of data that can be stored are: string, boolean, array, raw binary, date, number (integer, float, long, decimal128)
+
+
+##### COMMANDS (ON TERMINAL) #####
+mongosh  (switches to mongo mode)
+> db     (to test)
+test
+
+> show databases  (or 'show dbs')
+admin   40.00 KiB
+config  60.00 KiB
+local   40.00 KiB
+
+> use animalShelter
+switched to db animalShelter (if there is an 'animalShelter', it switches to that; if there isn't one, it creates that) (if we don't insert any data to animalShelter, it won't be in the list when we write 'show databases' command.
+
+> show collections   : (collection is sub-database. It is a group under a database. For example: under 'animalShelter' database, there can be a 'dogs' collection.
+--------------------------------------------
+
+#### CRUD OPERATIONS ON MONGODB ####
+
+****** INSERTING (CREATING): ******
+
+insert() Method:
+> db.myCollection.insert({myKey: "myValue"})   : [inserts one or multiple objects]
+
+> show collections
+dogs
+
+> db.dogs.find()  : [shows content of dogs]
+
+***** FINDING or QUERYING (READING) *****
+
+> db.dogs.find({breed: "corgi"})  : [finds object(s) of which breed is corgi]
+
+< db.dogs.findOne({breed: "corgi"})   : [finds and brings only one of the objects where the breed is "corgi"]
+
+***** UPDATE ***** 
+
+'$set' operator: replaces the value of a field with the specified value.
+> db.dogs.updateOne({name: 'Charlie'}, {$set: {age:4}})
+
+< db.dogs.updateOne({name: 'Charlie'}, {$set: {age:5, breed: 'Lab'}})   : [we updated 2 properties here. If the property that we write doesn't exist in the object, that property is created].
+
+< db.dogs.updateMany({catFriendly: true}, {$set:{catFriendly: false}})   : [find the objects where catFriendly is true; set those objects' catFriendly property as 'false'.
+
+< db.cats.updateOne({age: 6}, {$set: {age:7, dogfriendly: true}})   : [updating multiple properties of an object ('age' and 'dogFriendly' here].
+
+> db.cats.updateOne({age:7}, {$set: {age:8}, $currentDate: {lastChanged: true}})   : [adding a new field 'lastChanged' of which value is set to currentDate]
+
+> db.cats.replaceOne(....)    : [to change all the properties of an object, except its ID.
+
+***** DELETE***** 
+
+> db.cats.deleteOne({name: 'Blue Steele'})
+
+> db.cats.deleteMany({isAvailable: false})   : [deletes multiple objects]
+
+> db.cats.deleteMany({})   : [delete all content of 'cats' collection]
+
+**** ADDITIONAL MONGO OPERATORS ****
+
+> db.dogs.find({'personality.childFriendly': true, age: 10})   : [finds where 'childFriendly' that is nested inside 'personality' is true, and age is 10]
+
+> db.inventory.find({qty: {$gt: 20}})   : [finds objects where qty is greater than 20]
+
+> db.dogs.find({breed: {$in: ['Mutt', 'Corgi']}})   : [finds objects where 'breed' is 'Mutt' or 'Corgi']
+
+> db.dogs.find({breed: {$in: ['Mutt', 'Corgi']}, age: {$lt: 10}})   : [finds objects where 'breed' is 'Mutt' or 'Corgi', and age is less than 10]
+
+> db.dogs.find({breed: {$nin: ['Mutt, 'Corgi', 'Chihuahua']}})   : [finds objects where breed is not Mutt, Corgi, or Chihuahua]
+
+> db.myCollection.find( { $or: [ { quantity: { $lt: 20 } }, { price: 10 } ] } )

@@ -1,0 +1,15 @@
+Inline Styles: are the most specific; they are more specific than:* ID Selectors,  * Class, Attribute, & Pseudo Class Selectors,  * Element and Pseudo Element Selectors.
+
+Inline Style means writing style inside the Html file. For example (in Html file):<button id="signup" style="color:red">Sign Up</button>
+
+!!! Avoid using Inline Styles. They can cause confusion.
+
+--------------------------------
+
+Usage of  " !important " : it makes the command the most specific (super specific) one among other commands, and overwrites the other conflicting commands. Example:
+
+.tag {
+	color: red !important;
+}
+
+!!! Avoid using " !important " . Because it is against the nature of Cascading Style Sheets (CSS). Instead of using it, try to arrange the priorities by using CSS features: ID, class, or attribute etc.

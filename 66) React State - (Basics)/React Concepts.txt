@@ -1,0 +1,18 @@
+Note: If you have a data that needs to change within a component, you need to use state.
+
+- COMPONENTS: Building blocks of react. Combination of logic and presentation.
+- PROPS: Data passed to a component. Immutable (doesn't change).
+- STATE: Data specific to an instance of a components. Can change.
+
+WHAT GOES IN STATE?:
+- Data fetched from an API.
+- Form information.
+- A variable that "decides" whether sth is showing or hidden.
+- Ask yourself: "Will this ever change?" If so, it should go in state somewhere!
+----
+useState() is a React method. It's used like this: (array destructuring is used):
+const [count, setCount] = useState(0);  --> for a counter that starts from 0.
+'useState()' returns an array containing two elements:
+    - The piece of state itself,
+    - A function to change the piece of state.
+You must call useState INSIDE a component.

@@ -1,0 +1,8 @@
+First, install node_modules:
+> npm install
+
+On Terminal, run this file:
+index.js  (or index2_Deneme.js)
+It's under 'RESTDemo' folder.
+
+To open the app on web browser: write on the address line: localhost:3000/comments

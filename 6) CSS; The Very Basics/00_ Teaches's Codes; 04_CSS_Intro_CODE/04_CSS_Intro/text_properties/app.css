@@ -1,0 +1,19 @@
+h1 {
+    text-align: center; /* This text-align only operates within the box of the text (paragraph or div etc), and it doesn't move that box to the right or left. */
+    font-weight: 400;
+    text-decoration: blue underline wavy;
+    letter-spacing: 15px;
+    font-size: 80px;
+    /* font-family: Segoe UI, Futura, Arial, sans-serif;    -->   This means: "my first priority is "Segoe UI", if it's not available, then my second alternative choice is "Futura", then "Arial", then "sans-serif" */
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}
+
+

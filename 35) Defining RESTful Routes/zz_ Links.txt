@@ -1,0 +1,8 @@
+* npm UUID package:
+https://www.npmjs.com/package/uuid
+
+* Express Method Override:
+https://expressjs.com/en/resources/middleware/method-override.html
+
+* ORIGINAL REST DISSERTATION (HEAVY READING!):
+https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm

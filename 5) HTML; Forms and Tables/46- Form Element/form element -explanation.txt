@@ -1,0 +1,7 @@
+* The form element represents a document section containing interactive controls for submitting information.
+
+* The "action" attribute specifies WHERE the form data should be sent.
+
+* The method attribute specifies which http method should be used (don't worry about this for now).
+
+NOTE: When you submit a form, a http request will be sent and we control where that request goes to, using this attribute called action. And we control which type of http method.

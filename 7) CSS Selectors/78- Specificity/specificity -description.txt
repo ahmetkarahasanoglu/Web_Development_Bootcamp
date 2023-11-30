@@ -1,0 +1,11 @@
+Specificity: the more specific command overwrites the other more general command.
+Specificity is how the browser decides which rules to apply when multiple rules could apply to the same element. It is a measure of how specific a given selector is. The more specific selector wins.
+
+Specificiy priority: 1) Id  2) Class  3) Element.
+An Id is extremely specific.
+
+The calculation method of specificity: --- (the digits represent id, class, element. From left to right). For example: If there is only 1 element, the score is 001. If there is only 1 Id, the score is 100. So 100 wins over 001.
+
+Case: - - -  vs. - - -
+      0 0 28 vs. 0 1 0
+In this case, 010 wins, it has more priority. Because 1 is higher than 0. (the second section of the numbers)(the middle).

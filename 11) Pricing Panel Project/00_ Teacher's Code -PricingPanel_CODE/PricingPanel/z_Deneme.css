@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+}
+
+section {
+    background-color:bisque;
+    width: 60%;
+    height: 400px;
+    justify-content: center;
+    margin: auto; 
+    padding: 10px;   
+}
+
+section > div {
+    display: flex;
+    height: auto;
+}
+
+div {
+    border-right: 2px solid maroon;
+}

@@ -1,0 +1,27 @@
+/* rgba means: red, green, blue, ALPHA.
+Example:
+rgba(0, 209, 112, 0.5)
+The fourth parameter here is alpha which represents transparency. It takes a value between 0 and 1. 
+"0" is completely transparent.
+"1" is not at all transparent. */
+
+
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255,255,255,0.7)  /* rgba yerine hexadecimal renk kullanırsak (örneğin #d6cbd3) opaklığı şu şekilde belirtiyoruz: 6 haneli hexadecimal renk kodumuza 2 hane daha ekliyoruz opaklık için. Bu iki hane de 00 ile ff arasında değer alıyor. VS Code programımızda (bu programda) renk kodunun üzerine mouse'la geldiğimiz zaman ortaya çıkan renk paletinden transparent ayarını belirlediğimiz zaman bu son iki hane ekleniyor.  */
+    /*                      '--> alpha channel (rgba): when we use alpha channel, only background-color will have some transparency, other things will stay same (not transparent at all) (ex: text, button etc.)  */
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    /* opacity: 0.3;  all the content will have some transparency: div, text, button */
+}

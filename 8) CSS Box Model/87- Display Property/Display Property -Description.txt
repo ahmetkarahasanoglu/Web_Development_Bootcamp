@@ -1,0 +1,7 @@
+DISPLAY PROPERTY
+
+* Inline: Width and height are ignored. Margin and padding push elements away horizontally but not vertically.
+
+* Block: Block elements break the flow of a document. Width, height, margin and padding are respected.
+
+* Inline-Block: Behaved like an inline element except width, height, margin and padding are respected.

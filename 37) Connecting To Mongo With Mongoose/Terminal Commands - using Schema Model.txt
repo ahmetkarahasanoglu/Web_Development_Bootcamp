@@ -1,0 +1,35 @@
+(*) These notes are available also in index.js . It is easier to read there.
+----------
+
+SCHEMA MODEL ex: Movie.find(....)  --> 'Movie' is a model here. Models are similar to classes of javascript.
+
+
+****** CREATING NEW OBJECT (and saving) *****
+const m = new Movie({name: Top Gun, year: 1985});
+m.save()
+.then(data => {
+	console.log(data)
+})
+.catch(e => {
+	console.log(e)
+})
+
+*********** FINDING WITH MONGOOSE (ON TERMINAL) **************
+$ cd "This File's Directory"
+$ node -i -e "$(< index.js)"    (Actually Colt writes:  $ node   -->  .load index.js    But this doesn't work in new version of mongo, so instead of this, we wrote:   $ node -i -e "$(< index.js)"   --> this also gave an error when I tried. Instead, I wrote:    mongosh index.js   /   mongosh   (but in this way we can't work with Movie.find(....), we can work with db.movie.find(....)  --> and this is not the thing we want :-(   )
+> Movie.find({}).then(data => console.log(data))    : shows objects in 'Movie' model.
+> Movie.find({rating: 'PG-13'}).then(data => console.log(data))
+> Movie.find({year: {$lte: 1990}}).then(data => console.log(data))   : finds object of which year is less than or equal to 1990.
+> Movie.findOne({}).then(m => console.log(m))   : prints the first movie it finds.
+> Movie.findById('5f3r0c2d838e3725b55202c7').then(m => console.log(m))   : finds by id.
+
+*********** UPDATING WITH MONGOOSE **************
+> Movie.findOneAndUpdate({title: 'The Iron Giant'}, {score. 7.0}, {new: true}).then(m => console.log(m))   : update the object where title is 'The Iron Giant', set score to 7.0, and return the new updated object (if we don't write {new: true}, it will return the not-updated (old) object)
+(these two methods below(↓) doesn't return the updated object)
+> Movie.updateOne({title: "Alien"}, {year: 1978}).then(data => console.log(data))   : update the object where title is "Alien", set the year 1978. (this method doesn't return the updated object)
+> Movie.updateMany({title: {$in ['Amadeus', 'Stand By Me']}}, {score:10}.then(res => console.log(res))   : update the objects where the title is 'Amadeus' or 'Stand By Me'; set their score 10. (this method doesn't return the updated object)
+
+*********** DELETING WITH MONGOOSE **************
+> Movie.deleteOne({title: 'Amelie'}).then(msg => console.log(msg))   : returns 'deletedCount: 1'
+> Movie.deleteMany({year: {$gte: 1999}}).then(msg => console.log(msg))   : deletes the objects of which year is greater than or equal to 1999. Returns 'deletedCount: x'
+> Movie.findOneAndDelete({title: 'Alien'}).then(msg => console.log(msg))   : deletes one object of which title is 'Alien'. Returns the deleted object.

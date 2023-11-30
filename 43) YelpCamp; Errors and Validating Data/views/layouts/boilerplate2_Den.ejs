@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOILERPLATE!!!!!!!</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column vh-100"> <!-- 'd-flex flex-column vh-100': for positioning of the navbar, body and footer. 'flex-column': enables lineup of navbar, body and footer to be vertical; not horizontal -->
+    <%- include('../partials/navbar2_Den.ejs') %>
+    <main class="container mt-5">
+        <%- body %>  <!-- body part is imported from other files: show, new, edit, index.ejs etc. -->
+    </main>
+    <%- include('../partials/footer2_Den.ejs') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+
+    <script>
+        // CLIENT-SIDE VALIDATIONS:
+        // EXAMPLE STARTER JAVASCRIPT FOR DISABLING FORM SUBMISSIONS IF THERE ARE INVALID FIELDS [field frame turns red to warn]:  [source:  https://getbootstrap.com/docs/5.0/forms/validation]
+        (function () {
+          'use strict'  
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.validated-form')
+        
+          // Loop over them and prevent submission
+          Array.from(forms)  // this means: make an array from 'forms'. Because querySelectorAll brings a 'collection' or sth like that. We're converting it to an array.
+            .forEach(function (form) {  // loop over 'forms', take each element as 'form'
+              form.addEventListener('submit', function (event) {  // add an even listener to each form
+                if (!form.checkValidity()) {  // check each form's validity
+                  event.preventDefault()      // if it's not valid; preventDefault,
+                  event.stopPropagation()     // and stopPropogation.
+                }
+        
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+        </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+    *** FORMS ***
+* HTML form elements work differently than other DOM elements in React.
+  - Form elements naturally keep some internal state.
+* It's convenient to have a JS function that handles the submission of the form and has access to the data the user entered. The technique to get this is controlled components.
+* We make React state be the "single source of truth".
+* React controls:
+  - What is shown (the value of the components),
+  - What happens when user types (this gets kept in state).
+-----------------------------------------
+PASSING DATA UP TO A PARENT COMPONENT
+* In React, we generally have downward data flow: "Smart" parent components with simpler child components.
+  - But it's common for form components to manage their own state.
+  - But smarter parent component usually has a doSomethingOnSubmit method to update its state after the form submission.
+  - So, parent passes its doSomethingOnSubmit method as a prop to child.
+  - Child component calls this method, updating the parent's state.
+  - Child is "dumber" - all it know is to invoke that function with its data.
+-----------------------------------------
+(OPTIONAL) A THIRD PARTY VALIDATION TOOL "REACT-HOOK-FORM" (~REACT FORMS VALIDATION):
+a third-party validation package.
+$ npm install react-hook-form
+website for docs: www.react-hook-form.com
+- 

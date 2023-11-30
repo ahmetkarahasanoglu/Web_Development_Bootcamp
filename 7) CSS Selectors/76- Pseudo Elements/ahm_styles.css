@@ -1,0 +1,85 @@
+#signup {   /* selecting by id */
+    background-color: rgb(166, 205, 207);
+    color: crimson;
+}
+
+.tag {  /* We selected the items with "tag" CLASS. (we had given this class name to some items in the html file)  */
+    background-color: red;
+}
+
+li a {         /* We're selecting nested a's inside li's. We're using space character between "li" and "a". Note: no li's will be affected, only the a's inside li's will be affected. */
+    color: teal;
+}
+
+.post a { /* We're selecting a's inside the elements that have been given "post" class. */
+    color: palevioletred;
+}
+
+footer a {  /* We're selecting a's inside the footer(s). */
+    color: darkgreen;
+}
+
+input + button {  /* We're selecting the button element that comes right after the input element. (they are adjacent elements) (not descendant). */
+    background-color: pink;
+}
+
+h2 + button {
+    font-size: 20px;
+}
+
+footer > a {  /* We're selecting a's that are direct descendant of footer(s). */
+    color: deepskyblue;
+}
+
+input[type="password"] {
+    color: magenta;
+}
+
+/*
+section[class="post"] {        --> This line is same as just writing "section.post {"
+    background-color: purple;
+} 
+*/
+
+section.post {
+    background-color: aquamarine;
+}
+
+a[href*="pies"] {  /* Anywhere with the href attribute contains "example". */
+    background-color: yellow;
+}
+
+a[href$=".org"] {  /* href's that ends with ".org" */
+    color: brown
+}
+
+button:hover {  /* Selects any <a> element when hovered. */ 
+    background-color: orange;
+}
+
+.post button:hover {  /* Selects buttons under the items that have "post" class, when hovered. */
+	background-color: red;
+	color: cyan
+}
+
+.post button:active {  /* Active means when clicked and hold. If you release the click button, it will turn back to its previous condition. */
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(3) {  /* We're selecting the 3rd one of the items that have "post" class. */
+/* .post:nth-of-type(3n)  -> this will get me EVERY 3rd one (because we wrote "3n" ) */
+    background-color:rgb(34, 255, 0)
+}
+
+/* IN PSUEDO ELEMENTS; WE'RE SELECTING SPECIFIC ELEMENTS (PSEUDO ELEMENTS), RATHER THAN SELECTING AN ENTIRE PSEUDO CLASS: */
+h2::first-letter {  /* We're selecting first letter of every h2's. */
+    font-size: 50px;  /*  '-> We can also choose "first-line". */
+}
+
+p::selection {  /* Mouse'la bir paragraf ( <p> ) yazısını kararttığımızda (seçtiğimizde), bu seçtiğimiz yerler -anlamına geliyor. */
+    background-color: orange;
+} 
+
+/* ::selection {             --> Burada, tüm her şey içerisinden, bir yeri kararttığımızda (seçtiğimizde) -anlamına geliyor.
+    background-color: purple;
+} */

@@ -1,0 +1,12 @@
+* NodeJs Home Page:
+https://nodejs.org/en
+
+
+* Cross Code Game (Written in Node):
+https://www.cross-code.com/en/home
+
+* Electron (if you're curious):
+https://www.electronjs.org/
+
+* NASA Node Case Study:
+https://openjsf.org/wp-content/uploads/sites/84/2020/02/Case_Study-Node.js-NASA.pdf

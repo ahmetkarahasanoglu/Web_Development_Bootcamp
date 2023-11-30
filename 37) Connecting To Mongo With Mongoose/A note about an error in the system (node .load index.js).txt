@@ -1,0 +1,24 @@
+A note about the node .load index.js command issue
+-----
+Instead of using .load index.js inside of the node shell, use the command:
+node -i -e "$(< index.js)" in the system terminal (outside of the node shell, just be sure that you first change directories into the folder containing the index.js file)
+-----
+
+In the course videos that follow, you will see the
+.load index.js terminal command used inside of the node shell to execute a JS file and then to continue interacting with the loaded file code via the node shell.
+
+* Note: if using the .load command works well for you when you encounter it in future lecture videos, then you don't need to implement anything from the instructions below.
+
+It seems like there is a potential bug occurring to people who are using the newest versions of Node.js when using the .load index.js command while requiring the mongoose module and executing the lecture code in the JS file. The bug when you enter the .load index.js command in the node shell manifests as what seems to be an infinite loop printing the
+const mongoose = require('mongoose'); line of code repeatedly.
+
+We are hoping that this gets resolved with new versions of Node.js and the mongoose module, but in the meantime, here is a SOLUTION:
+
+Instead of using .load index.js inside of the node shell, use the command:
+node -i -e "$(< index.js)" in the system terminal (outside of the node shell, just be sure that you first change directories into the folder containing the index.js file) — this will load the file and start the node shell with this one command instead, and then it should work. Be sure to type out the command exactly as shown above.
+
+* Note: if your computer is running on the Windows operating system, then you should use the command mentioned above in the Git Bash terminal. You can find a written lecture note about using the Git Bash terminal while following this course on Windows on this link.
+
+Moving forward, keep a note of this and make sure to use the solution presented above whenever you encounter the described issue with the .load index.js command in any of the course lectures. If this gets resolved in the future, we will make sure to update this lecture note accordingly.
+
+Also, please reach out in the course Q&A boards if you need any help with this!

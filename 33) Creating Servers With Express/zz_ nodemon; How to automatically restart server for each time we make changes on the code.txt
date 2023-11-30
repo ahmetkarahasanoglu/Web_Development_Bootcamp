@@ -1,0 +1,12 @@
+How to automatically restart server for each time we make changes on the code:
+We need to install the nodemon package. And we prefer to install it globally:
+
+> npm install -g nodemon
+
+Then, when running index.js on terminal, write 'nodemon' instead of 'node'. Like this:
+> nodemon index.js
+
+
+
+Nodemon package link:
+https://www.npmjs.com/package/nodemon

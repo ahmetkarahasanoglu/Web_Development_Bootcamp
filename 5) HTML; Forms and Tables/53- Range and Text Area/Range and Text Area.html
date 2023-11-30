@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range and Text Area</title>
+</head>
+<body>
+    <p>
+        <form action="/the_target_place_to_send">
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="0" max="100" value="75" name="cheese_level"> <!-- If we would write an attriubute of step="20", it means the knob can do 5 jumps (100/20) jump 20 units each time. // value="75" gives a beginning value. -->
+            <button>Submit</button>
+
+            <br><br><br>
+
+            <label for="story">Tell us your story:</label> <br>
+            <textarea name="story" id="story" cols="60" rows="5">It was a dark and stormy night...</textarea> <!-- We can also use a placeholder -->            
+
+        </form>
+    </p>
+</body>
+</html>

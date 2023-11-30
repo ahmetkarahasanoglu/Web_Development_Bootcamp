@@ -1,0 +1,5 @@
+We created a MultiDiceRolls.js folder and here we imported RollDice() from RollDice.js. 
+
+In MultiDiceRolls.js we used <RollDice/> three times.
+
+Then, in App.js we imported MultiDiceRolls.js and we used it there ( <MultiDiceRolls/> ). So we had three dice roll results on the browser window.

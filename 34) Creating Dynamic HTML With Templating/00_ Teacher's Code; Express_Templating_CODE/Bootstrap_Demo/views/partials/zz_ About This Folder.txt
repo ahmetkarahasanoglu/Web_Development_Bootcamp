@@ -1,0 +1,8 @@
+This folder is about partials. EJS calls them 'includes'. It's a way of including templates in other templates. For example: if we're gonna use the <head> part in multiple files, we can store it in another directory and call it on the files where we need them (on the 'views' files).
+
+SYNTAX FOR INCLUDING 'PARTIALS':
+(pay att: we're using '<%-')
+<%- include('partials/head')%>
+<%- include('partials/navbar')%>
+
+<%- include('partials/footer')%>

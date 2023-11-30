@@ -1,0 +1,6 @@
+THE JSON STANDARD:
+https://www.json.org/json-en.html
+
+
+JSON FORMATTER & VALIDATOR:
+https://jsonformatter.curiousconcept.com/

@@ -1,0 +1,32 @@
+#signup {   /* selecting by id */
+    background-color: rgb(166, 205, 207);
+    color: crimson;
+}
+
+.tag {  /* We selected the items with "tag" CLASS. (we had given this class name to some items in the html file)  */
+    background-color: red;
+}
+
+li a {         /* We're selecting nested a's inside li's. We're using space character between "li" and "a". Note: no li's will be affected, only the a's inside li's will be affected. */
+    color: teal;
+}
+
+.post a { /* We're selecting a's inside the elements that have been given "post" class. */
+    color: palevioletred;
+}
+
+footer a {  /* We're selecting a's inside the footer(s). */
+    color: darkgreen;
+}
+
+input + button {  /* We're selecting the button element that comes right after the input element. (they are adjacent elements) (not descendant). */
+    background-color: pink;
+}
+
+h2 + button {
+    font-size: 20px;
+}
+
+footer > a {  /* We're selecting a's that are direct descendant of footer(s). */
+    color: deepskyblue;
+}

@@ -1,0 +1,14 @@
+img {
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+nav {
+    font-family: Rubik Maze;
+    font-size: 1.5em;
+    text-transform: capitalize; /* capitalize: kelimelerin ilk harflerini büyük harf yapar. */
+    border-bottom: 2px solid #b61414;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0 0 0;
+}

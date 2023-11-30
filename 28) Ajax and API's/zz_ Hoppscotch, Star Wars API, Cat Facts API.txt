@@ -1,0 +1,10 @@
+HOPPSCOTCH:
+https://hoppscotch.io/
+
+
+STAR WARS API:
+https://swapi.dev/documentation#base
+
+
+CAT FACTS API:
+https://catfact.ninja/

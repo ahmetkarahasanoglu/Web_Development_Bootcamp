@@ -1,0 +1,5 @@
+// EXPONENTIAL:
+3 ** 4   // 81
+
+// MOD (REMAINDER OPERATOR):
+19 % 5   // 4

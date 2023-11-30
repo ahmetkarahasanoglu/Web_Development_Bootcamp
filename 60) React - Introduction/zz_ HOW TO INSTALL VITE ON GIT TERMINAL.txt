@@ -1,0 +1,9 @@
+HOW TO INSTALL VITE ON GIT TERMINAL (to write react code on visual studio):
+
+$ npm create vite@latest
+....
+$ npm run dev
+
+
+NOTE: When you enter "npm run dev", if you get this error: "'vite' is not recognized as an internal or external command, operable program or batch file"; try entering this code (to install vite globally):
+$ npm install -g vite

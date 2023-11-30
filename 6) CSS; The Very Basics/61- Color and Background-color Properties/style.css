@@ -1,0 +1,13 @@
+h2 {  /* Selects all the h2's in the html file. */
+    color: teal;
+    background-color: plum;
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+}

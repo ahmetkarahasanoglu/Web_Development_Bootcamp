@@ -1,0 +1,6 @@
+There has to be one single 'top wrapper' element inside the 
+"export default function App() {"
+it can be a <div> or <form>, or it can also be an empty parants, like this:
+<>
+...
+</>

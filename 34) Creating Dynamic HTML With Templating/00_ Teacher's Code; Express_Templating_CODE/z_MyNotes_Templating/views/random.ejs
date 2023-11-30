@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+</head>
+<body>
+    <h1> Your random number is: <%= num %> </h1>    <!-- We used 'num' variable that has been sent from 'index.js' file. Instead of 'num', we could also use like this (but this would look crowded in this file and not preferred):  Math.floor(Math.random() * 10) + 1  -->
+                                                    <!--  '-> This is going to just embed a value to the document. (Pay attention to the 'equals' sign on the left of 'num') -->
+    <% if (num % 2 === 0) { %>          <!-- But this will run a code. (Pay att to syntax: 'less than' and 'percent'. No 'equals' sign here) -->
+        <h2>That is an even number</h2>
+    <% } else { %>
+        <h2>THAT IS AN ODD NUMBER</h2>
+    <% } %>
+
+    <h3> That number is: <%= num%2===0 ? 'EVEN' : 'ODD' %> </h3>  <!-- ('?' is ternary operator)  |||  We're using '=' sign (next to the '%' sign) because we're trying to render one of the two strings ('EVEN' and 'ODD') directly replacing the things on the left of the '?' sign. (this is a special case syntax I think) -->
+</body>
+</html>

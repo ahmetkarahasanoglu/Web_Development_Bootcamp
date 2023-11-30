@@ -1,0 +1,12 @@
+COMMON PATTERNS FOR UPDATING ARRAYS IN STATE (important):
+--> 00_ Teacher's Code / src / commonArrayPatterns.js
+
+* '-->When updating arrays in State, we have to use methods that doesn't change the original array. For example, we can't use pop(), but instead we should use filter.
+
+----------------------------------------
+For primitive types (variables that hold number, boolean etc.), React knows when they go through a change (useState perceives it). But for arrays and objects, React cannot perceive when their content change. So, we handle this by using a copy of the array:
+
+const [emojis, setEmojis] = useState([":)"]);
+    const addEmoji = () => {        
+        setEmojis((...oldEmojis) => [...oldEmojis, ";p"]);
+    }

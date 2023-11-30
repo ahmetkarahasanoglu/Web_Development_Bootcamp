@@ -1,0 +1,48 @@
+TERMINAL: A TEXT-BASED INTERFACE TO YOUR COMPUTER. ORIGINALLY A PHYSICAL OBJECT, BUT NOW WE USE SOFTWARE TERMINALS.
+
+AN ANALOGY: ATM is the terminal, the software running on the ATM is the shell.
+
+BASH: One of the most popular shells (and the default on a Mac).
+
+
+****** COMMANDS (IN TERMINAL) ******
+ls: (List). Used to list the content of your current directory
+
+pwd: (Print Working Directory). Prints the path to the working directory (where you currently are)
+
+cd: (Change Directory). Change and move between folders.
+
+cd .. : go back up one directory (there is a space character between 'cd' and '..')
+
+touch: creates a file or multiple files. Ex: 'touch index.html' or 'touch index.html app.css app.js'
+
+mkdir: (Make Directory). creates a new directory or directories.
+
+rm: (Remove). Deletes a file or files. It permanently removes them!
+
+rm-rf: deletes a directory (a folder) [r=recursive, f=force]
+
+Tilde (~): when we see this, it means we're in the home directory.
+
+----------------------------------
+RELATIVE VS. ABSOLUTE PATH:
+* This is relative directory:
+   - cd downloads/New Folder
+  This is also relative directory:
+   - cd ../../Pets --> goes 2 folders back and enters into 'Pets' there.
+* This is absolute directory:
+  cd /Users/AH-PC/downloads/New Folder (pay attention to the '/' in the beginning [after cd])
+  INFO: 
+- cd / --> takes us to the Root directory 
+- cd ~ --> takes us to the Home directory 
+
+-------------------------------------
+man: short for "manual".
+- man ls --> gives me information about ls command.
+  If it doesn't work on our terminal, we can also use:
+- 'ls --help'  or  'pwd --help'  etc
+------------------
+FLAGS:
+It is the letter we write after the command (ls or pwd etc). Example:
+- 'ls -l' : list the items in long format (details like update time, permissions)
+- 'ls -a' : show all the items including hidden files. Hidden files' name begin with a dot (.)

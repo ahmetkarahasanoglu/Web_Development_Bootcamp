@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons, Checkboxes, Selects</title>
+</head>
+<body>
+    <form action="/birds">
+        <input type="checkbox" name="agree_to_terms" id="agree" checked>
+        <label for="agree">I agree to everything.</label>
+
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs_value"> <br> <!-- The reason why we gave a value here is; when we submit the form, on the address bar of new page, we will see this "xs-value" in the address bar. -->            
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s_value"> <br> <!-- Name attribute of radiobox items must be SAME; In order that these three radioboxes be affiliated, we're giving same name attribute to them as "size". -->
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m_value"> <br>
+        </p>
+        
+        <p>
+            <label for="meal">Please select a meal:</label>
+            <select name="meal" id="meal">        <!-- Makes a dropbox. -->
+                <option value="">-Select a meal-</option>
+                <option value="fish">Fish</option>
+                <option value="veg" selected>Vegeterian</option> <!-- now this option is preselected, because we wrote "selected" here. -->
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+toc:
+  - MapiRequest
+  - MapiResponse
+  - MapiError
+  - MapiClient

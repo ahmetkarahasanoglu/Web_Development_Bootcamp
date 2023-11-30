@@ -1,0 +1,1 @@
+I did this exercise by myself too, and I did it correctly. It's in "3- React Conditionals" --> Slots.jsx

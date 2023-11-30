@@ -1,0 +1,20 @@
+* GIVE ME A JOKE PACKAGE:
+https://www.npmjs.com/package/give-me-a-joke
+
+* COLORS PACKAGE:
+https://www.npmjs.com/package/colors
+
+* COWSAY PACKAGE:
+https://www.npmjs.com/package/cowsay
+
+* NODE GROUP CHAT REPO:
+https://github.com/dkhd/node-group-chat
+
+* FRANC PACKAGE:
+https://github.com/wooorm/franc
+
+* NODEJS LANGS PACKAGE
+https://github.com/adlawson/nodejs-langs
+
+* USING IMPORT AND REQUIRE IN THE SAME FILE - NODE JS:
+https://www.youtube.com/watch?v=qFUonWJ-Tb0

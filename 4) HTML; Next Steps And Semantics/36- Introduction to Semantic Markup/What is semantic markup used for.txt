@@ -1,0 +1,15 @@
+Semantic markup words don't change anything in the html, they don't change the function of that particular 
+       tag that they're used in lieu of. For example: we can use a "nav" (navigation) instead of a "div". We can 
+       use "section", we can use "footer" instead of a "div". This is only for giving meaning to that part of the code. 
+       This is why it's called semantic (related to meaning). This is useful for: the code writer itself for a tidy code, 
+       for google to search through the content of html. Or, for another code writer to see and understand easily the code.
+       These elements are:
+       <section>
+       <article>
+       <nav>
+       <main>
+       <header>
+       <footer>
+       <aside>
+       <summary>
+       <details>

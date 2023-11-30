@@ -1,0 +1,14 @@
+ABOUT 'useEffect':
+* Can we do something after a render or re-render? Yes, we can. These are called 'side-effects' or 'effects'.
+* Effects are used for: doing things after (& unrelated to) a render. This is useful for different kinds of things.
+  - Changing parts of the DOM not covered by React.
+  - Async operations, like AJAX requests when a component is mounted.
+  - Doing things when a component is about to be unmounted.
+----
+
+* useEffect(myCallbackFn); 
+  '--> Runs myCallbackFn effect after every render.
+* useEffect(myCallbackFn, [productId, userId]);
+  '--> Runs myCallbackFn effect only if productId or userId variables change.
+* useEffect(myCallbackFn, []);
+  '--> Runs myCallbackFn effect only the first time (on mount)
